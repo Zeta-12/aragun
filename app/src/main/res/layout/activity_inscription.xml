@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inscription">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="896dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fond1"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="101dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/pseudo"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_mdp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Pseudonyme"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_mdp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Mot de passe"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/pwdConf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pseudo" />
+
+    <EditText
+        android:id="@+id/pwdConf"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_mdp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Confirmer mot de passe"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_mdp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Adresse mail"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/pseudo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="245dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="BIENVENUE SUR ARAGUN"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="60dp"
+        android:text="Mot de passe oublié ?"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Rejoins la communauté de ton jeu préféré"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/btn_log"
+        android:text="Se connecter"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwdConf" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inscription">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="896dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fond1"
+        tools:layout_editor_absoluteY="-25dp" />
+
+    <TextView
+        android:id="@+id/recherche_ton_jeu2"
+        android:layout_width="380dp"
+        android:layout_height="31dp"
+        android:background="@drawable/txt_recherche"
+        android:fontFamily="@font/roboto_thin"
+        android:text="Tes groupes de message"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="381dp"
+        android:layout_height="460dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/carre" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="333dp"
+        android:layout_height="49dp"
+        android:padding="8dp"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="341dp"><![CDATA[>
+
+        ]]>
+
+        <TextView
+            android:id="@+id/show_message"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:text="Hello" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_image26"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_image27"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="404dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_image28"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_image29"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_image30"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="590dp" />
+
+    <ImageView
+        android:id="@+id/imageFifa"
+        android:layout_width="152dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256"
+        app:srcCompat="@drawable/fifa22_background" />
+
+    <ImageView
+        android:id="@+id/imageFortnite"
+        android:layout_width="152dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageR6"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079"
+        app:srcCompat="@drawable/fortnite_background" />
+
+    <ImageView
+        android:id="@+id/imageR6"
+        android:layout_width="152dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079"
+        app:srcCompat="@drawable/r6_background" />
+
+    <ImageView
+        android:id="@+id/imageRocket"
+        android:layout_width="152dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.284"
+        app:srcCompat="@drawable/rocketleague_background" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="59dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrouves tes communautés"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <RelativeLayout
+        android:layout_width="333dp"
+        android:layout_height="49dp"
+        android:padding="8dp"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="395dp">>
+
+        <TextView
+            android:id="@+id/show_message"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:text="Hello" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
