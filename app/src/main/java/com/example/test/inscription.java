@@ -21,15 +21,20 @@ public class inscription extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private static final String TAG = "Utilisateurs";
 
-    EditText email = findViewById(R.id.mail);
-    EditText pseudo = findViewById(R.id.pseudo);
-    EditText password = findViewById(R.id.pwd);
-    EditText passwordConf = findViewById(R.id.pwdConf);
+    EditText email;
+    EditText pseudo;
+    EditText password;
+    EditText passwordConf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
+
+        email = findViewById(R.id.mail);
+        pseudo = findViewById(R.id.pseudo);
+        password = findViewById(R.id.pwd);
+        passwordConf = findViewById(R.id.pwdConf);
 
         Button inscription = findViewById(R.id.button);
         inscription.setOnClickListener(new View.OnClickListener() {
