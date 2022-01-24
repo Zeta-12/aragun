@@ -23,7 +23,7 @@
         android:layout_marginBottom="13dp"
         android:background="@drawable/input_mdp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:password="true"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/seconnecter"
@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:text="  Mot de passe" />
+        android:hint="@string/mot_de_passe" />
 
     <EditText
         android:id="@+id/email"
@@ -41,7 +41,7 @@
         android:layout_marginBottom="22dp"
         android:background="@drawable/input_mdp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:textAlignment="textStart"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/password"
@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        tools:text="  Adresse mail" />
+        android:hint="@string/adresse_mail" />
 
     <ImageView
         android:id="@+id/imageView4"

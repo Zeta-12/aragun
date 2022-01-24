@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">test</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="adresse_mail">Adresse mail</string>
+    <string name="pseudonyme">Pseudonyme</string>
+    <string name="confirmer_mot_de_passe">Confirmer mot de passe</string>
 </resources>

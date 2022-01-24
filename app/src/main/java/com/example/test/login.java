@@ -48,6 +48,15 @@ public class login extends AppCompatActivity {
                 startActivity(appel);
             }
         });
+
+        TextView mdp = findViewById(R.id.textView5);
+        mdp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mdpAct = new Intent(login.this, mdp.class);
+                startActivity(mdpAct);
+            }
+        });
     }
 
     private void signIn(String email, String password) {
