@@ -14,22 +14,6 @@
       app:srcCompat="@drawable/fond1"
       tools:layout_editor_absoluteY="-83dp" />
 
-  <EditText
-      android:id="@+id/repassword_mdp"
-      android:layout_width="192dp"
-      android:layout_height="45dp"
-      android:layout_marginTop="16dp"
-      android:background="@drawable/input_mdp"
-      android:ems="10"
-      android:hint="@string/confirmer_mot_de_passe"
-      android:inputType="textPersonName|textPassword"
-      android:textSize="15sp"
-      app:layout_constraintBottom_toTopOf="@+id/valider"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.502"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/password_mdp" />
-
   <TextView
       android:id="@+id/textView"
       android:layout_width="245dp"
@@ -56,18 +40,16 @@
 
   <Button
       android:id="@+id/valider"
-      android:layout_width="132dp"
-      android:layout_height="46dp"
-      android:layout_marginTop="36dp"
+      android:layout_width="146dp"
+      android:layout_height="55dp"
       android:layout_marginBottom="99dp"
       android:background="@drawable/btn_log"
-      android:text="Valider"
+      android:text="Envoyer le mail"
       android:textColor="#000000"
       app:layout_constraintBottom_toTopOf="@+id/textView7"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.498"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/repassword_mdp" />
+      app:layout_constraintStart_toStartOf="parent" />
 
   <ImageView
       android:id="@+id/imageView6"
@@ -83,32 +65,24 @@
 
   <EditText
       android:id="@+id/mail_mdp"
-      android:layout_width="192dp"
-      android:layout_height="45dp"
-      android:layout_marginTop="32dp"
+      android:layout_width="227dp"
+      android:layout_height="46dp"
+      android:layout_marginTop="200dp"
       android:background="@drawable/input_mdp"
       android:ems="10"
+      android:hint="@string/entrez_votre_adresse_mail"
       android:inputType="textPersonName"
-      android:hint="@string/adresse_mail"
       android:textSize="15sp"
-      app:layout_constraintBottom_toTopOf="@+id/password_mdp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
-  <EditText
-      android:id="@+id/password_mdp"
-      android:layout_width="192dp"
-      android:layout_height="45dp"
-      android:layout_marginTop="16dp"
-      android:background="@drawable/input_mdp"
-      android:ems="10"
-      android:hint="@string/mot_de_passe"
-      android:inputType="textPersonName|textPassword"
-      android:textSize="15sp"
-      app:layout_constraintBottom_toTopOf="@+id/repassword_mdp"
-      app:layout_constraintEnd_toEndOf="@+id/imageView2"
-      app:layout_constraintHorizontal_bias="0.495"
-      app:layout_constraintStart_toStartOf="@+id/imageView2"
-      app:layout_constraintTop_toBottomOf="@+id/mail_mdp" />
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="295dp"
+      android:layout_height="108dp"
+      android:text="Nous vous enverrons un lien pour reset votre mot de passe après avoir cliquer sur le bouton envoyer le mail. Veuillez cliquer sur le lien pour reset votre mot de passe."
+      tools:layout_editor_absoluteX="58dp"
+      tools:layout_editor_absoluteY="311dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

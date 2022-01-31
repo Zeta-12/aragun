@@ -29,7 +29,7 @@ public class mdp extends AppCompatActivity {
         setContentView(R.layout.activity_mdp);
         mAuth = FirebaseAuth.getInstance();
 
-        email = findViewById(R.id.email_mdp);
+        email = findViewById(R.id.mail_mdp);
 
         Button valider = findViewById(R.id.valider);
         valider.setOnClickListener(new View.OnClickListener() {
