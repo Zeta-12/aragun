@@ -42,14 +42,15 @@
       android:id="@+id/valider"
       android:layout_width="146dp"
       android:layout_height="55dp"
-      android:layout_marginBottom="99dp"
       android:background="@drawable/btn_log"
       android:text="Envoyer le mail"
       android:textColor="#000000"
-      app:layout_constraintBottom_toTopOf="@+id/textView7"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.498"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.763" />
 
   <ImageView
       android:id="@+id/imageView6"
@@ -73,9 +74,10 @@
       android:hint="@string/entrez_votre_adresse_mail"
       android:inputType="textPersonName"
       android:textSize="15sp"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/textView11"
