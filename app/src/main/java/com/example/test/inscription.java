@@ -46,7 +46,6 @@ public class inscription extends AppCompatActivity {
                         password.getText().toString(), passwordConf.getText().toString());
             }
         });
-
     }
 
 
@@ -65,7 +64,7 @@ public class inscription extends AppCompatActivity {
 
                             if (task.isSuccessful()) {
                                 FirebaseUser user = mAuth.getCurrentUser();
-                                Intent appel = new Intent(inscription.this, login.class);
+                                Intent appel = new Intent(inscription.this, acceuil.class);
                                 startActivity(appel);
                             } else {
                                 Toast.makeText(inscription.this, "Sign Up Failed",
