@@ -82,7 +82,10 @@
       android:layout_width="295dp"
       android:layout_height="108dp"
       android:text="Nous vous enverrons un lien pour reset votre mot de passe après avoir cliquer sur le bouton envoyer le mail. Veuillez cliquer sur le lien pour reset votre mot de passe."
-      tools:layout_editor_absoluteX="58dp"
-      tools:layout_editor_absoluteY="311dp" />
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/imageView2"
+      app:layout_constraintHorizontal_bias="0.487"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
