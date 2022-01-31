@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -46,17 +47,17 @@ public class inscription extends AppCompatActivity {
             }
         });
 
-    }
-    /*
-    @Override
-    public void onStart() {
-        super.onStart();
+        TextView mdp = findViewById(R.id.textView8);
+        mdp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mdpAct = new Intent(inscription.this, mdp.class);
+                startActivity(mdpAct);
+            }
+        });
 
-        // Check auth on Activity start
-        if (mAuth.getCurrentUser() != null) {
-            reload();
-        }
-    }*/
+    }
+
 
     private void createAccount(String email, String pseudo, String password, String passwordConf) {
         Log.d(TAG, "signIn");

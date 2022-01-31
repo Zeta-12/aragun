@@ -20,8 +20,6 @@ public class mdp extends AppCompatActivity {
     private static final String TAG = "Utilisateurs";
 
     EditText email;
-    EditText password;
-    EditText repassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +27,7 @@ public class mdp extends AppCompatActivity {
         setContentView(R.layout.activity_mdp);
         mAuth = FirebaseAuth.getInstance();
 
-        email = findViewById(R.id.mail_mdp);
-        password = findViewById(R.id.password_mdp);
-        repassword = findViewById(R.id.repassword_mdp);
+        email = findViewById(R.id.email_mdp);
 
         Button valider = findViewById(R.id.valider);
         valider.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +44,9 @@ public class mdp extends AppCompatActivity {
         if (!validateForm()) {
             return;
         }
+
+        /*https://www.youtube.com/watch?v=0-DRdI_xpvQ&ab_channel=CodingCafe*/
+
         if(validateForm() && password.equals(repassword)) {
             mAuth.getCurrentUser().updatePassword(password).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
