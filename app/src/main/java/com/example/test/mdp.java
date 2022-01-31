@@ -27,7 +27,7 @@ public class mdp extends AppCompatActivity {
         setContentView(R.layout.activity_mdp);
         mAuth = FirebaseAuth.getInstance();
 
-        email = findViewById(R.id.email_mdp);
+        /*email = findViewById(R.id.email_mdp);
 
         Button valider = findViewById(R.id.valider);
         valider.setOnClickListener(new View.OnClickListener() {
@@ -36,16 +36,16 @@ public class mdp extends AppCompatActivity {
                 changePassword(email.getText().toString(), password.getText().toString(),
                         repassword.getText().toString());
             }
-        });
+        });*/
     }
 
-    private void changePassword(String email, String password, String repassword) {
+    /*private void changePassword(String email, String password, String repassword) {
         Log.d(TAG, "signIn");
         if (!validateForm()) {
             return;
         }
 
-        /*https://www.youtube.com/watch?v=0-DRdI_xpvQ&ab_channel=CodingCafe*/
+        // https://www.youtube.com/watch?v=0-DRdI_xpvQ&ab_channel=CodingCafe
 
         if(validateForm() && password.equals(repassword)) {
             mAuth.getCurrentUser().updatePassword(password).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -60,9 +60,9 @@ public class mdp extends AppCompatActivity {
                 }
             });
         }
-    }
+    }*/
 
-    private boolean validateForm() {
+    /*private boolean validateForm() {
         boolean result = true;
         if (TextUtils.isEmpty(email.getText().toString())) {
             email.setError("Required");
@@ -86,5 +86,5 @@ public class mdp extends AppCompatActivity {
         }
 
         return result;
-    }
+    }*/
 }
