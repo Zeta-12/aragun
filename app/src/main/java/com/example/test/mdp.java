@@ -33,8 +33,18 @@ public class mdp extends AppCompatActivity {
         valider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changePassword(email.getText().toString(), password.getText().toString(),
-                        repassword.getText().toString());
+                String resetemail = email.getText().toString();
+                if(TextUtils.isEmpty(resetemail)){
+                    Toast.makeText(mdp.this, "Please write your email adresse first...", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    mAuth.sendPasswordResetEmail(resetemail).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            
+                        }
+                    })
+                }
             }
         });
     }
