@@ -86,8 +86,8 @@
 
     <ImageView
         android:id="@+id/imageFortnite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="249dp"
+        android:layout_height="129dp"
 
         android:layout_marginTop="136dp"
         android:layout_marginBottom="416dp"
@@ -100,8 +100,8 @@
 
     <ImageView
         android:id="@+id/imageR6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="235dp"
+        android:layout_height="136dp"
 
         android:layout_marginBottom="280dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"

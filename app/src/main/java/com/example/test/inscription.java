@@ -47,15 +47,6 @@ public class inscription extends AppCompatActivity {
             }
         });
 
-        TextView mdp = findViewById(R.id.textView8);
-        mdp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent mdpAct = new Intent(inscription.this, mdp.class);
-                startActivity(mdpAct);
-            }
-        });
-
     }
 
 
