@@ -2,6 +2,8 @@ package com.example.test;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -41,60 +43,18 @@ public class mdp extends AppCompatActivity {
                     mAuth.sendPasswordResetEmail(resetemail).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
-                            
+                            if (task.isSuccessful()){
+                                Toast.makeText(mdp.this, "Please check your email account !", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(mdp.this, login.class));
+                            }
+                            else {
+                                String erreur = task.getException().getMessage();
+                                Toast.makeText(mdp.this, "Erreur occured: " + erreur, Toast.LENGTH_SHORT).show();
+                            }
                         }
-                    })
+                    });
                 }
             }
         });
-    }
-
-    private void changePassword(String email, String password, String repassword) {
-        Log.d(TAG, "signIn");
-        if (!validateForm()) {
-            return;
-        }
-
-        /*https://www.youtube.com/watch?v=0-DRdI_xpvQ&ab_channel=CodingCafe*/
-
-        if(validateForm() && password.equals(repassword)) {
-            mAuth.getCurrentUser().updatePassword(password).addOnCompleteListener(new OnCompleteListener<Void>() {
-                @Override
-                public void onComplete(@NonNull Task<Void> task) {
-                    if (task.isSuccessful()) {
-                        Toast.makeText(getApplicationContext(), "Password updated successfully", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Log.e("Password Update", task.getException() + "");
-                        Toast.makeText(getApplicationContext(), "Password update failed", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
-        }
-    }
-
-    private boolean validateForm() {
-        boolean result = true;
-        if (TextUtils.isEmpty(email.getText().toString())) {
-            email.setError("Required");
-            result = false;
-        } else {
-            email.setError(null);
-        }
-
-        if (TextUtils.isEmpty(password.getText().toString())) {
-            password.setError("Required");
-            result = false;
-        } else {
-            password.setError(null);
-        }
-
-        if (TextUtils.isEmpty(repassword.getText().toString())) {
-            repassword.setError("Required");
-            result = false;
-        } else {
-            repassword.setError(null);
-        }
-
-        return result;
     }
 }
