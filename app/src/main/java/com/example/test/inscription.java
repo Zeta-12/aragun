@@ -29,6 +29,7 @@ public class inscription extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_inscription);
         mAuth = FirebaseAuth.getInstance();
 
         email = findViewById(R.id.mail);
